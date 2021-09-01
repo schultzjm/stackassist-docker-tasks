@@ -1,0 +1,7 @@
+services:
+  web:
+    container_name: backend
+    build: ./backend/
+    ports:
+      - "8888:8888"
+    command: "node backend.js"
